@@ -24,6 +24,9 @@ const buttonPricing = "Pricing";
             <div class="col-lg-5">
               <h1 class="heading" data-aos="fade-up" data-aos-delay="0">
                 {{ heroHeading }}
+                <h2>
+                  Key Management System
+                </h2>
               </h1>
               <div class="excerpt" data-aos="fade-up" data-aos-delay="100">
                 <p>

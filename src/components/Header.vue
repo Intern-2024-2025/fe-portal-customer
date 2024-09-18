@@ -9,9 +9,9 @@ import { themeColor, siteName } from "../data/items";
           >{{ siteName }}<span class="text-primary">.</span></a
         >
         <ul class="js-clone-nav d-none d-lg-inline-block site-menu float-left">
-          <li class="active">
+          <!-- <li class="active">
             <a href="#home-section" class="nav-link">Home</a>
-          </li>
+          </li> -->
           <!-- <li class="has-children">
             <a href="#" class="nav-link">Dropdown</a>
             <ul class="dropdown">
@@ -24,18 +24,27 @@ import { themeColor, siteName } from "../data/items";
               <li><a href="#" class="nav-link">Menu Three</a></li>
             </ul>
           </li> -->
-          <li><a href="#features-section" class="nav-link">Product</a></li>
+          <!-- <li><a href="#features-section" class="nav-link">Product</a></li>
           <li><a href="#pricing-section" class="nav-link">Service</a></li>
           <li><a href="#about-section" class="nav-link">Blog</a></li>
-          <li><a href="#contact-section" class="nav-link">Contact Us</a></li>
+          <li><a href="#contact-section" class="nav-link">Contact Us</a></li> -->
         </ul>
         <ul
           class="js-clone-nav d-none mt-1 d-lg-inline-block site-menu float-right"
         >
-          <li class="cta-button-outline" style="margin-right: 5px;"><a href="#">Sign in</a></li>
-          <li class="cta-primary">
-            <a href="#" :style="[{ backgroundColor: themeColor }]">Register</a>
+          <li class="active">
+            <a href="#home-section" class="nav-link">Home</a>
           </li>
+          <li><a href="#features-section" class="nav-link">Service</a></li>
+          <li><a href="#pricing-section" class="nav-link">Product</a></li>
+          <li><a href="#about-section" class="nav-link">Blog</a></li>
+          <li><a href="#contact-section" class="nav-link">Contact Us</a></li>
+          <li class="cta-button-outline" style="margin-right: 5px">
+            <a href="#">Sign in</a>
+          </li>
+          <!-- <li class="cta-primary">
+            <a href="#" :style="[{ backgroundColor: themeColor }]">Register</a>
+          </li> -->
         </ul>
         <a
           href="#"
