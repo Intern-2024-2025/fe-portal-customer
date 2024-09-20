@@ -20,7 +20,7 @@ import Footer from "./components/Footer.vue";
   <Service2 />
   <Feature />
   <Pricing />
-  <Pricing />
+  <!-- <Pricing /> -->
   <Advantage />
   <Testimonial />
   <About />
