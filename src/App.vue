@@ -21,7 +21,7 @@
   <Service2 />
   <Feature />
   <Pricing />
-  <Pricing />
+  <!-- <Pricing /> -->
   <Advantage />
   <Testimonial />
   <About />

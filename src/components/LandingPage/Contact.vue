@@ -1,4 +1,4 @@
-<!-- <script setup>
+<script setup>
 import { themeColor, contactInfo } from "../data/items";
 
 const heading = "Get In Touch";
@@ -101,10 +101,10 @@ const labels = {
       </div>
     </div>
   </div>
-</template> -->
+</template>
 
-<template>
-	<section class="py-6 dark:bg-gray-100 dark:text-gray-900">
+<!-- <template>
+	<section class="py-6 bg-gray-800 text-gray-50">
 		<div class="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
 			<div class="py-6 md:py-0 md:px-6">
 				<h1 class="text-4xl font-bold">Get in touch</h1>
@@ -134,19 +134,18 @@ const labels = {
 			<form novalidate="" class="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
 				<label class="block">
 					<span class="mb-1">Full name</span>
-					<input type="text" placeholder="Leroy Jenkins" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100">
+					<input type="text" placeholder="Leroy Jenkins" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800">
 				</label>
 				<label class="block">
 					<span class="mb-1">Email address</span>
-					<input type="email" placeholder="leroy@jenkins.com" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100">
+					<input type="email" placeholder="leroy@jenkins.com" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800">
 				</label>
 				<label class="block">
 					<span class="mb-1">Message</span>
-					<textarea rows="3" class="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"></textarea>
+					<textarea rows="3" class="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800"></textarea>
 				</label>
-				<button type="button" class="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-600 dark:text-gray-50 focus:dark:ring-violet-600 hover:dark:ring-violet-600">Submit</button>
+				<button type="button" class="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-violet-400 text-gray-900 focus:ring-violet-400 hover:ring-violet-400">Submit</button>
 			</form>
 		</div>
 	</section>
-</template>
-
+</template> -->
