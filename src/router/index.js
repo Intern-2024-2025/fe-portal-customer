@@ -8,6 +8,11 @@ const routes = [
     name: "home",
     component: () => import(/* webpackChunkName: "home" */ "../views/Home/Home.vue"),
   },
+  {
+    path: "/dashboard",
+    name: "dashboard",
+    component: () => import(/* webpackChunkName: "home" */ "../views/Dashboard/Dashboard.vue"),
+  },
 ];
 
 //create router

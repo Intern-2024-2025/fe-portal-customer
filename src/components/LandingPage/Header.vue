@@ -1,5 +1,5 @@
 <script setup>
-import { themeColor, siteName } from "../data/items";
+import { themeColor, siteName } from "../../data/items";
 </script>
 <template>
   <nav class="site-nav dark js-site-navbar mb-5 site-navbar-target">
@@ -39,7 +39,7 @@ import { themeColor, siteName } from "../data/items";
           <li><a href="#pricing-section" class="nav-link">Product</a></li>
           <li><a href="#about-section" class="nav-link">Blog</a></li>
           <li><a href="#contact-section" class="nav-link">Contact Us</a></li>
-          <li class="cta-button-outline" style="margin-right: 5px">
+          <li class="cta-button-rounded" :style="[{ color: themeColor }, { borderColor: themeColor }]">
             <a href="#">Sign in</a>
           </li>
           <!-- <li class="cta-primary">

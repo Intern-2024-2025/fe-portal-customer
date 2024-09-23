@@ -1,10 +1,10 @@
 <script setup>
-import { themeColor } from "../data/items";
-import personPhoto from "../assets/images/person_1.jpg";
-import mainPhoto from "../assets/images/service1.jpg";
+import { themeColor } from "../../data/items";
+import personPhoto from "../../assets/images/person_1.jpg";
+import mainPhoto from "../../assets/images/service1.jpg";
 
 const service1Heading = "Digital Services";
-const service1SubHeading = "Selling Digital Services";
+const service1SubHeading = "Anthena Key Management System";
 const service1Quote =
   '"Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia."';
 const personName = "James Anderson";
@@ -15,9 +15,14 @@ function youtubeVideoUrl() {
 }
 </script>
 <template>
-  <div>Service Satu Dua Tiga Empat</div>
-  <!-- <div class="untree_co-section" id="features-section">
+  <div class="untree_co-section" id="features-section">
     <div class="container">
+      <div class="row pricing-title">
+        <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">
+          <h2 class="heading">Anthena Key Management System</h2>
+          <p>Software-Based Key Management System with Hardware-Based Root of Trust</p>
+        </div>
+      </div>
       <div class="row justify-content-between">
         <div class="col-lg-4">
           <span
@@ -41,7 +46,7 @@ function youtubeVideoUrl() {
               <li>Far far away behind the word</li>
             </ul>
           </div>
-          <div class="mb-4" data-aos="fade-up" data-aos-delay="300">
+          <!-- <div class="mb-4" data-aos="fade-up" data-aos-delay="300">
             <div class="untree_co-testimonial d-flex">
               <div class="text">
                 <blockquote>
@@ -58,10 +63,10 @@ function youtubeVideoUrl() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="col-lg-7" data-aos="fade-up" data-aos-delay="400">
-          <a :href="youtubeVideoUrl()" class="btn-video" data-fancybox>
+          <!-- <a :href="youtubeVideoUrl()" class="btn-video" data-fancybox>
             <span class="wrap-icon-play">
               <svg
                 class="bi bi-play-fill"
@@ -76,10 +81,10 @@ function youtubeVideoUrl() {
                 />
               </svg>
             </span>
-            <img :src="mainPhoto" alt="Image" class="img-fluid img-shadow" />
-          </a>
+          </a> -->
+          <img :src="mainPhoto" alt="Image" class="img-fluid img-shadow" />
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 </template>

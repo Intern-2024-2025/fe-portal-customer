@@ -1,5 +1,5 @@
 <script setup>
-import mainPhoto from "../assets/images/service2.jpg";
+import mainPhoto from "../../assets/images/service2.jpg";
 const items = [
   {
     id: 1,

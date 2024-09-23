@@ -1,6 +1,6 @@
 <script setup>
-import { themeColor } from "../data/items";
-import mainPhoto from "../assets/images/about.svg";
+import { themeColor } from "../../data/items";
+import mainPhoto from "../../assets/images/about.svg";
 
 const heading = "About";
 const subHeading = "About Us";

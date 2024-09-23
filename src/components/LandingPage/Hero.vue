@@ -1,6 +1,6 @@
 <script setup>
-import mainPhoto from "../assets/images/hero.svg";
-import { themeColor } from "../data/items";
+import mainPhoto from "../../assets/images/hero.svg";
+import { themeColor } from "../../data/items";
 
 const heroHeading = "Anthena";
 const buttonSeeFeature = "See Features";
