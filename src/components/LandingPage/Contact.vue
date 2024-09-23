@@ -1,5 +1,5 @@
 <script setup>
-import { themeColor, contactInfo } from "../data/items";
+import { themeColor, contactInfo } from "../../data/items";
 
 const heading = "Get In Touch";
 const subHeading = "Far from the countries Vokalia and Consonantia";
