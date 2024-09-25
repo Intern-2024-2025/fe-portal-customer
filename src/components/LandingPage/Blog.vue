@@ -29,7 +29,7 @@ const blogItems = [
 <template>
   <div class="untree_co-section bg-light">
     <div class="container">
-      <div class="row mb-4">
+      <div class="row mb-4 ">
         <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">
           <h2 class="heading">{{ heading }}</h2>
           <p>{{ subHeading }}</p>
@@ -46,10 +46,10 @@ const blogItems = [
               <div class="img-wrap">
                 <img :src="blogItems[0].photo" alt="Image" class="img-fluid" />
               </div>
-              <div class="post-meta">
+              <!-- <div class="post-meta">
                 <strong>Posted by {{ blogItems[0].name }}</strong>
                 <span>{{ blogItems[0].date }}</span>
-              </div>
+              </div> -->
             </div>
             <div class="news-contents mb-4">
               <span class="post-meta-2"
@@ -92,10 +92,10 @@ const blogItems = [
               <div class="img-wrap">
                 <img :src="blogItems[1].photo" alt="Image" class="img-fluid" />
               </div>
-              <div class="post-meta">
+              <!-- <div class="post-meta">
                 <strong>Posted by {{ blogItems[1].name }}</strong>
                 <span>{{ blogItems[1].date }}</span>
-              </div>
+              </div> -->
             </div>
             <div class="news-contents mb-4">
               <span class="post-meta-2"
@@ -134,10 +134,10 @@ const blogItems = [
               <div class="img-wrap">
                 <img :src="blogItems[2].photo" alt="Image" class="img-fluid" />
               </div>
-              <div class="post-meta">
+              <!-- <div class="post-meta">
                 <strong>Posted by {{ blogItems[2].name }}</strong>
                 <span>{{ blogItems[2].date }}</span>
-              </div>
+              </div> -->
             </div>
             <div class="news-contents mb-4">
               <span class="post-meta-2"
