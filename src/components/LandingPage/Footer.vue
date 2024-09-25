@@ -4,7 +4,7 @@ import { contactInfo } from "../../data/items";
 const copyrightText = "Copyright 2024, All rights reserved.";
 const column1Heading = "Anthena Key Management Server";
 const column1Text =
-  "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.";
+  "Flexible and user friendly software-based key management system with hardware-based root of trust and protection.";
 const column2Heading = "Projects";
 const column3Heading = "Services";
 const column4Heading = "Contact";
@@ -44,7 +44,7 @@ const socialItems = [
           <div class="widget">
             <h3>{{ column1Heading }}</h3>
             <p>{{ column1Text }}</p>
-          </div>
+          </div> 
           <div class="widget">
             <h3>{{ connectHeading }}</h3>
             <ul class="list-unstyled social">
@@ -77,7 +77,7 @@ const socialItems = [
           </div>
         </div>
         <div class="col-lg-2 ml-auto">
-          <div class="widget">
+          <!-- <div class="widget">
             <h3>{{ column2Heading }}</h3>
             <ul class="list-unstyled float-left links">
               <li><a href="#">La Lega Stadium</a></li>
@@ -86,17 +86,17 @@ const socialItems = [
               <li><a href="#">Manage Center</a></li>
               <li><a href="#">Sports Hall</a></li>
             </ul>
-          </div>
+          </div> -->
         </div>
         <div class="col-lg-2">
           <div class="widget">
-            <h3>{{ column3Heading }}</h3>
+            <!-- <h3>{{ column3Heading }}</h3>
             <ul class="list-unstyled float-left links">
               <li><a href="#">Architect</a></li>
               <li><a href="#">Interior Design</a></li>
               <li><a href="#">Landscape Design</a></li>
               <li><a href="#">Consultancy</a></li>
-            </ul>
+            </ul> -->
           </div>
         </div>
         <div class="col-lg-3">
@@ -109,11 +109,11 @@ const socialItems = [
                   contactInfo.phone1
                 }}</a>
               </li>
-              <li>
+              <!-- <li>
                 <a :href="'tel://' + contactInfo.phone2">{{
                   contactInfo.phone2
                 }}</a>
-              </li>
+              </li> -->
               <li>
                 <a :href="'mailto:' + contactInfo.email"
                   ><span>{{ contactInfo.email }}</span></a
