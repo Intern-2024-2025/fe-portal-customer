@@ -1048,9 +1048,9 @@ h4,
   margin-bottom: 20px;
 }
 .news-item .news-contents h3 {
-  line-height: 1.2;
+  /* line-height: 1.2; */
   /* line-height: sm; */
-  /* font-size: larger; */
+  font-size: larger;
 }
 .news-item .news-contents h3 a {
   color: #000000;

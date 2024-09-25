@@ -7,7 +7,8 @@ const blogItems = [
     name: "James",
     date: "Jun 14, 2020",
     category: "Digital Service",
-    photo: "images/person_1.jpg",
+    photo: "images/pp.png",
+    description: "This is called present tense. Do you knowThis is called present tense. Do you know This is called present tense...",
   },
   {
     title: "Far far away behind the word mountains far from the countries",
@@ -15,6 +16,7 @@ const blogItems = [
     date: "Jun 14, 2020",
     category: "Digital Service",
     photo: "images/person_2.jpg",
+    description: "This is called present tense. Do you knowThis is called present tense. Do you know This is called present tense...",
   },
   {
     title: "Far far away behind the word mountains far from the countries",
@@ -22,6 +24,7 @@ const blogItems = [
     date: "Jun 14, 2020",
     category: "Digital Service",
     photo: "images/person_3.jpg",
+    description: "This is called present tense. Do you knowThis is called present tense. Do you know This is called present tense...",
   },
 ];
 </script>
@@ -56,11 +59,14 @@ const blogItems = [
                 >{{ blogItems[0].category }}, 4 min read</span
               >
               <h3>
-                <a href="#">{{ blogItems[0].title }}</a>
+                <a href="https://midtrans.com/id/blog/amaan-gandeng-bisnis-kecil-dan-menengah">{{ blogItems[0].title }}</a>
               </h3>
+              <span class="post-meta-2"
+                >{{ blogItems[0].description }}</span
+              >          
             </div>
             <p class="mb-0">
-              <a href="#" class="read-more-arrow">
+              <a href="https://midtrans.com/id/blog/amaan-gandeng-bisnis-kecil-dan-menengah" class="read-more-arrow">
                 <svg
                   class="bi bi-arrow-right"
                   width="1em"
@@ -102,11 +108,14 @@ const blogItems = [
                 >{{ blogItems[1].category }}, 4 min read</span
               >
               <h3>
-                <a href="#">{{ blogItems[1].title }}</a>
+                <a href="https://midtrans.com/id/blog/amaan-gandeng-bisnis-kecil-dan-menengah">{{ blogItems[1].title }}</a>
               </h3>
+              <span class="post-meta-2"
+                >{{ blogItems[1].description }}</span
+              >    
             </div>
             <p class="mb-0">
-              <a href="#" class="read-more-arrow">
+              <a href="https://midtrans.com/id/blog/amaan-gandeng-bisnis-kecil-dan-menengah" class="read-more-arrow">
                 <svg
                   class="bi bi-arrow-right"
                   width="1em"
@@ -144,11 +153,14 @@ const blogItems = [
                 >{{ blogItems[2].category }}, 4 min read</span
               >
               <h3>
-                <a href="#">{{ blogItems[2].title }}</a>
+                <a href="https://midtrans.com/id/blog/amaan-gandeng-bisnis-kecil-dan-menengah">{{ blogItems[2].title }}</a>
               </h3>
+              <span class="post-meta-2"
+                >{{ blogItems[2].description }}</span
+              >    
             </div>
             <p class="mb-0">
-              <a href="#" class="read-more-arrow">
+              <a href="https://midtrans.com/id/blog/amaan-gandeng-bisnis-kecil-dan-menengah" class="read-more-arrow">
                 <svg
                   class="bi bi-arrow-right"
                   width="1em"
@@ -171,6 +183,7 @@ const blogItems = [
           </div>
         </div>
       </div>
+      <div class="col-12 text-center p-4">pagination</div>
     </div>
   </div>
 </template>
