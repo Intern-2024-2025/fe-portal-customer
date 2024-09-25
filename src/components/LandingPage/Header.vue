@@ -37,7 +37,7 @@ import { themeColor, siteName } from "../../data/items";
           </li>
           <li><a href="#features-section" class="nav-link">Service</a></li>
           <li><a href="#pricing-section" class="nav-link">Product</a></li>
-          <li><a href="#about-section" class="nav-link">Blog</a></li>
+          <li><a href="blog" class="nav-link">Blog</a></li>
           <li><a href="#contact-section" class="nav-link">Contact Us</a></li>
           <li class="cta-button-rounded" :style="[{ color: themeColor }, { borderColor: themeColor }]">
             <a href="#">Sign in</a>
