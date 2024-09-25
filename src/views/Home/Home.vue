@@ -16,6 +16,11 @@ import Footer from "../../components/LandingPage/Footer.vue";
 <template>
   <Header />
   <Hero />
+  <service1/>
+  <Service2/>
+  <!-- <Service2/>
+  <Feature/>
+  <Advantage/> -->
   <!-- <Service1 />
   <Service2 />
   <Feature />
@@ -25,6 +30,6 @@ import Footer from "../../components/LandingPage/Footer.vue";
   <Testimonial />
   <About />
   <Blog />
-  <Contact />
-  <Footer /> -->
+  <Contact /> -->
+  <Footer />
 </template>

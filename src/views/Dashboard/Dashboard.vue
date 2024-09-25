@@ -1,4 +1,2 @@
 <script></script>
-<template>
-    Dashboard
-</template>
+<template>Dashboard</template>
