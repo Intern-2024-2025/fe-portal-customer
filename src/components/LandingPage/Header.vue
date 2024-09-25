@@ -33,12 +33,12 @@ import { themeColor, siteName } from "../../data/items";
           class="js-clone-nav d-none mt-1 d-lg-inline-block site-menu float-right"
         >
           <li class="active">
-            <a href="#home-section" class="nav-link">Home</a>
+            <a href="/" class="nav-link">Home</a>
           </li>
           <!-- contoh a href menuju ke id #about-section -->
           <li><a href="" class="nav-link">Service</a></li>
           <li><a href="" class="nav-link">Product</a></li>
-          <li><a href="" class="nav-link">Blog</a></li>
+          <li><a href="blog" class="nav-link">Blog</a></li>
           <li><a href="" class="nav-link">Contact Us</a></li>
           <li class="cta-button-rounded" :style="[{ color: themeColor }, { borderColor: themeColor }]">
             <a href="#">Sign in</a>

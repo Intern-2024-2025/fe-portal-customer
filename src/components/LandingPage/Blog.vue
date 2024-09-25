@@ -29,7 +29,7 @@ const blogItems = [
 <template>
   <div class="untree_co-section bg-light">
     <div class="container">
-      <div class="row mb-4 ">
+      <div class="row mb-">
         <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">
           <h2 class="heading">{{ heading }}</h2>
           <p>{{ subHeading }}</p>
