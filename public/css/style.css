@@ -199,6 +199,11 @@ h4,
 .site-nav .site-navigation .site-menu > li > a.active {
   color: #407bff;
 }
+.active {
+  /* color: red; */
+  font-weight: bold;
+}
+
 .site-nav .site-navigation .site-menu > li.cta-button-outline a {
   padding: 5px 22px;
   border: 1px solid rgba(0, 0, 0, 0.1);
