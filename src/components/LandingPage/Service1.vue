@@ -9,23 +9,26 @@ const service1Quote =
   '"Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia."';
 const personName = "James Anderson";
 const designation = "Facebook, Product Lead";
-function youtubeVideoUrl() {
-  const youtubeVideoId = "FzRH7y3LbQE";
-  return `https://www.youtube.com/watch?v=${youtubeVideoId}&amp;t=9s`;
-}
+// function youtubeVideoUrl() {
+//   const youtubeVideoId = "FzRH7y3LbQE";
+//   return `https://www.youtube.com/watch?v=${youtubeVideoId}&amp;t=9s`;
+// }
 </script>
 <template>
-  <div class="untree_co-section" id="features-section">
+  <div class="untree_co-section bg-light" id="features-section">
     <div class="container">
       <div class="row pricing-title">
         <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">
           <h2 class="heading">Anthena Key Management System</h2>
-          <p>Software-Based Key Management System with Hardware-Based Root of Trust</p>
+          <p>
+            Software-Based Key Management System with Hardware-Based Root of Trust
+          </p>
         </div>
       </div>
-      <div class="row justify-content-between">
-        <div class="col-lg-4">
-          <span
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-4" data-aos="fade-right" data-aos-delay="400">
+          <img :src="mainPhoto" alt="Image" class="img-fluid" />
+          <!-- <span
             class="caption"
             data-aos="fade-up"
             data-aos-delay="0"
@@ -34,9 +37,9 @@ function youtubeVideoUrl() {
           >
           <h3 class="heading mb-4" data-aos="fade-up" data-aos-delay="100">
             {{ service1SubHeading }}
-          </h3>
-          <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-            <p>
+          </h3> -->
+          <!-- <div class="mb-4" data-aos="fade-up" data-aos-delay="200"> -->
+          <!-- <p>
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia, there live the blind texts. Separated
               they live in Bookmarksgrove right at the coast
@@ -44,8 +47,8 @@ function youtubeVideoUrl() {
             <ul class="list-unstyled ul-check primary">
               <li>There live the blind texts</li>
               <li>Far far away behind the word</li>
-            </ul>
-          </div>
+            </ul> -->
+          <!-- </div> -->
           <!-- <div class="mb-4" data-aos="fade-up" data-aos-delay="300">
             <div class="untree_co-testimonial d-flex">
               <div class="text">
@@ -66,6 +69,65 @@ function youtubeVideoUrl() {
           </div> -->
         </div>
         <div class="col-lg-7" data-aos="fade-up" data-aos-delay="400">
+          <!-- <span
+            class="caption"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            :style="[{ color: themeColor }]"
+            >{{ service1Heading }}</span
+          >
+          <h3 class="heading mb-4" data-aos="fade-up" data-aos-delay="100">
+            {{ service1SubHeading }}
+          </h3> -->
+          <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+            <!-- <p>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast
+            </p> -->
+            <ul class="list-unstyled ul-check primary">
+              <li>
+                Anthena builds a Key Management System (Anthena-KMS) to manage
+                cryptographic keys throughout their life cycles and to protect
+                the keys from breaches due to improper key management.
+              </li>
+              <li>
+                We deploy state-of-the-arts cryptographic tools that run on
+                Hardware-based Secure Enclave technology (Intel® Software Guard
+                Extensions) to provide both key management system and
+                cryptographic services at the enterprise level.
+              </li>
+              <li>
+                Anthena-KMS is built locally by an all-Indonesian team of
+                experts to meet stringent international standards (Common
+                Criteria for Information Technology Security Evaluation).
+              </li>
+              <li>
+                Anthena-KMS continues to be developed to protect against
+                adversaries capable of implementing large-scale quantum attack
+                algorithms.
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class="mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="untree_co-testimonial d-flex">
+              <div class="text">
+                <blockquote>
+                  {{ service1Quote }}
+                </blockquote>
+                <div class="author d-flex">
+                  <div class="pic mr-3">
+                    <img :src="personPhoto" alt="Image" class="img-fluid" />
+                  </div>
+                  <div>
+                    <strong class="d-block">{{ personName }}</strong
+                    ><span class="d-block">{{ designation }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
           <!-- <a :href="youtubeVideoUrl()" class="btn-video" data-fancybox>
             <span class="wrap-icon-play">
               <svg
@@ -82,7 +144,7 @@ function youtubeVideoUrl() {
               </svg>
             </span>
           </a> -->
-          <img :src="mainPhoto" alt="Image" class="img-fluid img-shadow" />
+          <!-- <img :src="mainPhoto" alt="Image" class="img-fluid img-shadow" /> -->
         </div>
       </div>
     </div>

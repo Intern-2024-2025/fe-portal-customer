@@ -766,8 +766,9 @@ h4,
   background: url("../images/dots.png") right top;
 }
 
-.untree_co-hero .excerpt {
+.untree_co-hero .excerpt  {
   margin-bottom: 30px;
+  font-size: 18px;
 }
 
 .untree_co-section {
@@ -875,7 +876,11 @@ h4,
   transform: translate(-50%, -50%);
 }
 
-.service .service-contents h3 {
+.service .service-contents h3{
+  font-size: 24px;
+}
+
+.service .service-contents p{
   font-size: 18px;
 }
 
@@ -1301,13 +1306,14 @@ h4,
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 .ul-check li:before {
   position: absolute;
   left: 0;
   top: -0.2rem;
   content: "\e5ca";
-  font-size: 20px;
+  font-size: 24px;
   font-family: "icomoon";
 }
 
