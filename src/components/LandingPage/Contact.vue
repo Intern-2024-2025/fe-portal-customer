@@ -28,30 +28,35 @@ const labels = {
             <div class="row">
               <div class="col-6">
                 <div class="form-group">
-                  <label class="" for="fname">{{ labels.firstName }}</label>
-                  <input type="text" class="form-control" id="fname" />
+                  <label class="" for="fname">{{ labels.firstName }}</label><br/>
+                  <!-- <textarea type="input" class="" id="fname" cols="30" rows="3"></textarea> -->
+                  <input type="text" class="small-input-field" id="fname">
                 </div>
               </div>
               <div class="col-6">
                 <div class="form-group">
                   <label class="" for="lname">{{ labels.lastName }}</label>
-                  <input type="text" class="form-control" id="lname" />
+                  <!-- <textarea type="input" class="" id="lname" cols="30" rows="3"></textarea> -->
+                  <input type="text" class="small-input-field" id="lname">
                 </div>
               </div>
             </div>
             <div class="form-group">
               <label class="" for="email">{{ labels.email }}</label>
-              <input type="email" class="form-control" id="email" />
+            </div>
+            <div>
+              <!-- <textarea type="input" class="" id="email" cols="69" rows=""></textarea> -->
+               <input type="text" class="large-input-field" id="email">
             </div>
             <div class="form-group">
-              <label class="" for="message">{{ labels.message }}</label>
+              <label class="" for="message">{{ labels.message }}</label><br/>
               <textarea
-                name=""
-                class="form-control"
-                id="message"
-                cols="30"
-                rows="5"
-              ></textarea>
+              name=""
+              rows="3"
+              cols="71"
+              placeholder="Message text"
+              id="message"
+              />
             </div>
             <button
               type="submit"
@@ -103,6 +108,28 @@ const labels = {
   </div>
 </template>
 
+<style>
+  /* Atur ukuran input menggunakan CSS */
+  .large-input-field {
+    width: 100%; /* Sesuaikan lebar */
+    height: 50px; /* Atur tinggi yang lebih besar */
+    padding: 15px; /* Berikan padding yang cukup */
+    font-size: 16px; /* Ukuran font */
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .small-input-field {
+    width: 100%; /* Sesuaikan lebar */
+    height: 50px; /* Atur tinggi yang lebih besar */
+    padding: 15px; /* Berikan padding yang cukup */
+    font-size: 16px; /* Ukuran font */
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+</style>
+
 <!-- <template>
 	<section class="py-6 bg-gray-800 text-gray-50">
 		<div class="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
@@ -149,3 +176,311 @@ const labels = {
 		</div>
 	</section>
 </template> -->
+
+<!-- <template>
+    <div class="contact-us-container">
+      <h1 class="title">Contact us</h1>
+      <p class="subtitle">
+        We have custom plans to power your business. Tell us your needs, and we'll contact you shortly.
+      </p>
+      <form @submit.prevent="handleSubmit" class="form">
+        <div class="form-group">
+          <label for="name" class="label">Name</label>
+          <input type="text" id="name" v-model="formData.name" class="input" required />
+        </div>
+        <div class="form-group">
+          <label for="surname" class="label">Surname</label>
+          <input type="text" id="surname" v-model="formData.surname" class="input" required />
+        </div>
+        <div class="form-group">
+          <label for="email" class="label">Email</label>
+          <input type="email" id="email" v-model="formData.email" class="input" required />
+        </div>
+        <div class="form-group">
+          <label for="country" class="label">Country</label>
+          <select id="country" v-model="formData.country" class="select" required>
+            <option value="" disabled selected>Select a country</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <label for="topic" class="label">Topic</label>
+          <select id="topic" v-model="formData.topic" class="select" required>
+            <option value="" disabled selected>Select a topic</option>
+            <option value="sales">Sales Inquiry</option>
+            <option value="support">Technical Support</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="subject" class="label">Subject</label>
+          <input type="text" id="subject" v-model="formData.subject" class="input" required />
+        </div>
+        <div class="form-group">
+          <label for="message" class="label">Full description</label>
+          <textarea id="message" v-model="formData.message" class="textarea" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="button">Send →</button>
+        </div>
+        <p class="terms">By continuing, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy policy</a>.</p>
+      </form>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    data() {
+      return {
+        formData: {
+          name: '',
+          surname: '',
+          email: '',
+          country: '',
+          topic: '',
+          subject: '',
+          message: ''
+        }
+      }
+    },
+    methods: {
+      handleSubmit() {
+        // Handle form submission, e.g., send data to an API
+        console.log(this.formData)
+      }
+    }
+  }
+  </script>
+  
+  <style scoped>
+  .contact-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background-color: #121212;
+    color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .input,
+  .select,
+  .textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    width: 100%;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .terms {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  </style> -->
+  <!-- <template>
+    <div class="contact-us-container">
+      <h1 class="title">Contact us</h1>
+      <p class="subtitle">
+        We have custom plans to power your business. Tell us your needs, and we'll contact you shortly.
+      </p>
+      <form @submit.prevent="handleSubmit" class="form">
+        <div class="form-group">
+          <label for="name" class="label">Name</label>
+          <input type="text" id="name" v-model="formData.name" class="input" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="surname" class="label">Surname</label>
+          <input type="text" id="surname" v-model="formData.surname" class="input" placeholder="Your surname" required />
+        </div>
+        <div class="form-group">
+          <label for="email" class="label">Email</label>
+          <input type="email" id="email" v-model="formData.email" class="input" placeholder="Enter your email address" required />
+        </div>
+        <div class="form-group">
+          <label for="country" class="label">Country</label>
+          <select id="country" v-model="formData.country" class="select" required>
+            <option value="" disabled>Select a country</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="topic" class="label">Topic</label>
+          <select id="topic" v-model="formData.topic" class="select" required>
+            <option value="" disabled>Select a topic</option>
+            <option value="sales">Sales Inquiry</option>
+            <option value="support">Technical Support</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="subject" class="label">Subject</label>
+          <input type="text" id="subject" v-model="formData.subject" class="input" placeholder="Let us know how we can help" required />
+        </div>
+        <div class="form-group">
+          <label for="message" class="label">Full description</label>
+          <textarea id="message" v-model="formData.message" class="textarea" placeholder="Include as much details as you can" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="button">Send →</button>
+        </div>
+        <p class="terms">By continuing, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy policy</a>.</p>
+      </form>
+    </div>
+  </template>
+  
+  <script setup>
+  import { reactive } from 'vue'
+  
+  const formData = reactive({
+    name: '',
+    surname: '',
+    email: '',
+    country: '',
+    topic: '',
+    subject: '',
+    message: ''
+  })
+  
+  const handleSubmit = () => {
+    console.log(formData)
+    alert('Form Submitted! Check console for data.')
+  }
+  </script>
+  
+  <style scoped>
+  .contact-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background-color: #0a0a23;
+    color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .input,
+  .select,
+  .textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    width: 100%;
+    background-color: #121212;
+    color: white;
+  }
+  
+  .input::placeholder,
+  .textarea::placeholder {
+    color: #888;
+  }
+  
+  .select {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .terms {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .terms a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .terms a:hover {
+    text-decoration: underline;
+  }
+  </style> -->
+  
