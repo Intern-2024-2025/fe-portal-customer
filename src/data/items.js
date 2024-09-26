@@ -2,11 +2,11 @@ const themeColor = '#407BFF'
 const siteName = 'Anthena'
 
 const contactInfo = {
-    address: '43 Raymouth Rd. Baltemoer, London 3910',
-    phone1: '+1(123)-456-7890',
-    phone2: '+1(123)-456-7890',
-    email: 'info@mydomain.com',
-    website: 'https://yourwebsite.com/'
+    address: 'JL. Kaliurang KM.14.5',
+    phone1: '+62-8123-4567-8901',
+    // phone2: '+1(123)-456-7890',
+    email: 'admin@sandhiguna.com',
+    website: 'https://sandhiguna.com/'
 }
 
 export { themeColor, siteName, contactInfo }
