@@ -18,6 +18,21 @@ const routes = [
     name: "blog",
     component: () => import(/* webpackChunkName: "home" */ "../views/blog/Blog.vue"),
   },
+  {
+    path: "/contact",
+    name: "contact",
+    component: () => import( "../views/Contact/ContactView.vue"),
+  },
+  // {
+  //   path: "/Contact1",
+  //   name: "contact1",
+  //   component: () => import( "../views/Contact/MainPageView.vue"),
+  // },
+  {
+    path: "/Pricing",
+    name: "pricing",
+    component: () => import( "../views/PricingV/PricingView.vue"),
+  },
 ];
 
 //create router

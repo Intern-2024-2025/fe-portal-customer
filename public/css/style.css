@@ -87,12 +87,12 @@ h4,
   box-shadow: none;
 }
 .btn.btn-primary {
-  background: #407bff;
+  background: #427eff;
   border-color: #407bff;
 }
 .btn.btn-primary:hover {
-  border-color: #5489ff;
-  background: #5489ff;
+  border-color: #407bff;
+  background: #407bff;
 }
 .btn.btn-outline-primary {
   border-color: #407bff;

@@ -18,6 +18,7 @@ const packages = [
   },
 ];
 </script>
+
 <template>
   <div class="untree_co-section bg-light" id="pricing-section">
     <div class="container">
@@ -120,3 +121,51 @@ const packages = [
     </div>
   </div>
 </template>
+
+<style scoped>
+.pricing {
+  position: relative;
+  padding: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  transition: all 0.3s ease; /* Animasi perubahan */
+}
+
+.pricing:hover {
+  border-color: hsl(240, 100%, 50%); /* Warna border berubah saat hover */
+  transform: translateY(-10px); /* Efek terangkat */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Bayangan muncul saat hover */
+}
+
+
+.pricing .body {
+  text-align: center;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.ul-check {
+  margin-top: 1rem;
+}
+
+.btn {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: hsl(240, 100%, 50%) !important;
+  color: white !important;
+  border-color: hsl(240, 100%, 50%) !important;
+}
+
+.btn-primary:hover {
+  background-color: hsl(240, 80%, 40%) !important;
+  color: white !;
+  border-color: hsl(240, 80%, 40%);
+}
+
+</style>
